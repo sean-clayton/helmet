@@ -1,6 +1,9 @@
 open Types
 
-let new_set_of_downs: down_and_distance = (FirstDown, Yards 10)
+let new_set_of_downs: down_and_distance = {
+  down = FirstDown;
+  distance = Yards 10;
+}
 
 let score_of_scoring_play = function
   | Touchdown -> 6
