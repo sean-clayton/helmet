@@ -53,6 +53,7 @@ type scoring_play =
 
 type distance =
   | Yards of yards
+  | Goal
   | Inches
 
 type down =

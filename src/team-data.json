@@ -1,9 +1,9 @@
 [
   {
     "name": "Arizona Cardinals",
-    "abbreviation": "ARZ",
+    "abbreviation": "ARI",
     "nickname": "Cardinals",
-    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ARZ.svg",
+    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/ARI.svg",
     "primary_color": "rgb(151, 35, 63)",
     "secondary_color": "rgb(255, 182, 18)"
   },
@@ -17,9 +17,9 @@
   },
   {
     "name": "Baltimore Ravens",
-    "abbreviation": "BLT",
+    "abbreviation": "BAL",
     "nickname": "Ravens",
-    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BLT.svg",
+    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/BAL.svg",
     "primary_color": "rgb(36, 23, 115)",
     "secondary_color": "rgb(0, 0, 0)"
   },
@@ -57,9 +57,9 @@
   },
   {
     "name": "Cleveland Browns",
-    "abbreviation": "CLV",
+    "abbreviation": "CLE",
     "nickname": "Browns",
-    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CLV.svg",
+    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/CLE.svg",
     "primary_color": "rgb(255, 60, 0)",
     "secondary_color": "rgb(49, 29, 0)"
   },
@@ -97,9 +97,9 @@
   },
   {
     "name": "Houston Texans",
-    "abbreviation": "HST",
+    "abbreviation": "HOU",
     "nickname": "Texans",
-    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HST.svg",
+    "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg",
     "primary_color": "rgb(3, 32, 47)",
     "secondary_color": "rgb(167, 25, 48)"
   },
@@ -130,7 +130,7 @@
   {
     "name": "Los Angeles Chargers",
     "abbreviation": "LAC",
-    "nickname": "Angeles Chargers",
+    "nickname": "Chargers",
     "logo_url": "https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/LAC.svg",
     "primary_color": "rgb(0, 128, 198)",
     "secondary_color": "rgb(255, 194, 14)"

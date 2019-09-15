@@ -20,6 +20,7 @@ let string_of_down = function
 
 let string_of_distance = function
   | Yards i -> string_of_int i
+  | Goal -> "Goal"
   | Inches -> "Inches"
 
 let string_of_down_and_distance (down, distance) =
