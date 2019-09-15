@@ -63,9 +63,17 @@ type down =
 
 type penalty_code = | CHB | CLP | DOD | DH | DOF | DPI | DTM | DOG | DOK | DSQ | ENC | FMM | FCI | FST | HC | BAT | BLI | IBW | ICT | ICB | ICU | IDT | ILF | IFH | IFP | KIK | ILM | IPB | ISH | ILS | ITK | ITP | ILH | IDK | IDP | ING | IFC | KOB | LEA | LEV | LBL | NZI | OH | OOF | OPI | OTM | OFK | POK | RRK | RPS | RNK | SFK | TAU | TRP | UNR | UNS | UOH
 
-type down_and_distance = (down * distance)
+type down_and_distance = {
+  down: down;
+  distance: distance;
+}
 
-type penalty = (team * penalty_code * down_and_distance * game_clock)
+type penalty = {
+  team: team;
+  penalty_code: penalty_code;
+  down_and_distance: down_and_distance;
+  game_clock: game_clock;
+}
 
 type flag =
   | FlagOnField
