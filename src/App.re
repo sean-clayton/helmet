@@ -36,7 +36,7 @@ let reducer = (state, action) =>
   | SetHomeTeam(value) => {...state, homeTeam: value}
   | SetAwayTeam(value) => {...state, awayTeam: value}
   | CreateGame(game) => {...state, game: Some(game)}
-  | GameEventOccurred((EndOfGame, _, _, _)) => {...state, game: None}
+  | GameEventOccurred({game_event: EndOfGame}) => {...state, game: None}
   | GameEventOccurred(event) =>
     switch (state.game) {
     | Some(game) => {...state, game: Some(Api.new_game_event(game, event))}
@@ -59,7 +59,15 @@ let make = () => {
 
   let handleEndGame = _event =>
     switch (state.game) {
-    | Some(_) => dispatch(GameEventOccurred((EndOfGame, None, None, None)))
+    | Some(_) =>
+      dispatch(
+        GameEventOccurred({
+          game_event: EndOfGame,
+          new_down_and_distance: None,
+          new_game_clock: Some(0),
+          new_line_of_scrimmage: None,
+        }),
+      )
     | None => ()
     };
 

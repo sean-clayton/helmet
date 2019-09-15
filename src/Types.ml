@@ -102,7 +102,12 @@ type game_event_type =
   | EndOfPlayoffOvertimeQuarter
   | EndOfGame
 
-type game_event = (game_event_type * line_of_scrimmage option * down_and_distance option * game_clock option)
+type game_event = {
+  game_event: game_event_type;
+  new_line_of_scrimmage: line_of_scrimmage option;
+  new_down_and_distance: down_and_distance option;
+  new_game_clock: game_clock option;
+}
 
 type game_state = {
   home_team: football_team;
